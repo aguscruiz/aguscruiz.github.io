@@ -1,0 +1,934 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,700');
+@font-face {
+    font-family: 'museo_sans100';
+    src: url('museosans-100-webfont.eot');
+    src: url('museosans-100-webfont.eot?#iefix') format('embedded-opentype'), url('museosans-100-webfont.woff2') format('woff2'), url('museosans-100-webfont.woff') format('woff'), url('museosans-100-webfont.ttf') format('truetype'), url('museosans-100-webfont.svg#museo_sans100') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'museo_sans700';
+    src: url('museosans-700-webfont.eot');
+    src: url('museosans-700-webfont.eot?#iefix') format('embedded-opentype'), url('museosans-700-webfont.woff2') format('woff2'), url('museosans-700-webfont.woff') format('woff'), url('museosans-700-webfont.ttf') format('truetype'), url('museosans-700-webfont.svg#museo_sans700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'museo_sans900';
+    src: url('museosans-900-webfont.eot');
+    src: url('museosans-900-webfont.eot?#iefix') format('embedded-opentype'), url('museosans-900-webfont.woff2') format('woff2'), url('museosans-900-webfont.woff') format('woff'), url('museosans-900-webfont.ttf') format('truetype'), url('museosans-900-webfont.svg#museo_sans900') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* BASIC HTML */
+
+::selection {
+    background: #64ffda;
+    color: #121212;
+}
+
+::-moz-selection {
+    background: #64ffda;
+    color: #121212;
+}
+
+body,
+html {
+    font-family: 'Merriweather', -apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+    font-weight: 300;
+    background-color: #fff;
+    color: #212121;
+    font-size: 10px;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'museo_sans900';
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'museo_sans700';
+}
+
+h1 {
+    font-size: 3.6rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+h5 {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    color: inherit;
+    left: 0;
+    top: 0;
+    position: relative;
+}
+
+a:hover,
+a:focus,
+a:active {
+    left: -2px;
+    top: -2px;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    color: #757575;
+}
+
+.max-width {
+    width:90%;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.content {
+    width: 100%;
+    display: inline-block;
+    margin: 0 0 5rem;
+    font-size: 1.6rem;
+}
+
+
+/*----------  Home  ----------*/
+
+.contentBlock {
+    border: 1px solid;
+    padding: 4rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.contentBlockLeft {
+    float: left;
+    width: 50%;
+}
+
+.contentBlockRight {
+    float: right;
+    width: 50%;
+    padding-left: 4rem;
+}
+
+.contentBlockTwoColumns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 4rem;
+    -moz-column-gap: 4rem;
+    column-gap: 4rem;
+}
+
+.contentBlock a {
+    font-weight: 700;
+}
+
+.contentBlock p {
+    line-height: 1.5;
+}
+
+.contentBlock.noPadding {
+    padding: 0;
+}
+
+.contentBlock .imgBordered {
+    border: 1px solid;
+    margin-bottom: 2rem;
+    position: relative;
+    right: -8rem;
+}
+
+.contentBlock .imgBordered:last-child {
+    margin-bottom: 0rem;
+}
+
+.contentBlock h1 {
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    position: relative;
+    left: -8rem;
+    letter-spacing: -1px;
+}
+
+.contentBlockTwoColumns ul {
+    display: inline-block;
+    font-family: 'museo_sans100';
+    width: 100%;
+}
+
+.contentBlockTwoColumns ul li {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+a.visitLink {
+    border: 1px solid;
+    position: relative;
+    left: -8rem;
+    padding: 2rem;
+    display: inline-block;
+    margin-top: 4rem;
+    font-family: 'museo_sans900';
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+.moreWork {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    float: left;
+}
+
+.moreWork a {
+    width: 48%;
+    float: left;
+    border: 1px solid;
+    padding: 2rem;
+    font-family: 'museo_sans900';
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.moreWork a.prevWork {
+    margin-right: 2%;
+}
+
+.moreWork a.nextWork {
+    margin-left: 2%;
+    text-align: right;
+    float: right;
+}
+
+.flexslider {
+    margin: -4.1rem -4.1rem 4.1rem -4.1rem;
+    border: 1px solid;
+}
+
+.flexslider .slides img {
+}
+
+.flex-control-paging li a {
+    border: 1px solid;
+}
+
+
+/*----------  Social icons  ----------*/
+
+.socialIcons {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    font-size:2rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    background-color: #fff
+}
+
+.socialIcons a {
+    padding: 1rem;
+    border: 1px solid;
+    box-shadow: 0 0 0 #fff;
+}
+
+.socialIcons a:hover,
+.socialIcons a:focus,
+.socialIcons a:active {
+    border-radius: 0;
+}
+
+.socicon {
+    font-family: 'socicon';
+}
+
+
+/*----------  Colors  ----------*/
+
+.colorNormal .header h1 {
+    color: #ff1744;
+    background-color: #64ffda;
+}
+
+.colorNormal .socialIcons a {
+    color: #ff1744;
+    border-color: #fff;
+    background-color: #fff;
+}
+
+.colorNormal .socialIcons a:hover,
+.colorNormal .socialIcons a:focus,
+.colorNormal .socialIcons a:active {
+    color: #ff1744;
+    border-color: #ff1744;
+    background-color: #64ffda;
+    box-shadow: 0.4rem 0.4rem 0 #ff1744;
+}
+
+.colorNormal .header .navigation a {
+    border-color: #ff1744;
+    color: #ff1744;
+    background-color: #fff;
+    box-shadow: 0 0 0 #fff;
+}
+
+.colorNormal .header .navigation a:hover,
+.colorNormal .header .navigation a:focus,
+.colorNormal .header .navigation a:active {
+    color: #ff1744;
+    border-color: #ff1744;
+    background-color: #64ffda;
+    box-shadow: 0.4rem 0.4rem 0 #ff1744;
+}
+
+.colorNormal .header .navigation a.active {
+    color: #fff;
+    border-color: #ff1744;
+    background-color: #ff1744;
+}
+
+.colorNormal .contentBlock {
+    border-color: #ff1744;
+    box-shadow: 0.4rem 0.4rem 0 #ff1744;
+}
+
+.colorNormal .contentBlock a {
+    color: #ff1744;
+}
+
+.colorNormal .contentBlock a:hover,
+.colorNormal .contentBlock a:focus,
+.colorNormal .contentBlock a:active {
+    text-shadow: 0.4rem 0.4rem 0 #64ffda;
+}
+
+.colorNormal .imgBordered {
+    border-color: #ff1744;
+    background-color: #64ffda;
+    box-shadow: 0.4rem 0.4rem 0 #ff1744;
+}
+
+.colorNormal .contentBlock h1 {
+    color: #ff1744;
+    text-shadow: 0.4rem 0.4rem 0 #64ffda;
+}
+
+.colorNormal .contentBlock h2,
+.colorNormal .contentBlock h3,
+.colorNormal .contentBlock h4 {
+    color: #424242;
+}
+
+.colorNormal a.visitLink {
+    color: #ff1744;
+    border-color: #ff1744;
+    background-color: #fff;
+    box-shadow: 0.4rem 0.4rem 0 #ff1744;
+}
+
+.colorNormal a.visitLink:hover,
+.colorNormal a.visitLink:focus,
+.colorNormal a.visitLink:active {
+    background-color: #64ffda;
+    box-shadow: 0.4rem 0.4rem 0 #ff1744;
+}
+
+.colorNormal .moreWork a {
+    color: #ff1744;
+    border-color: #ff1744;
+    background-color: #fff;
+    box-shadow: 0.4rem 0.4rem 0 #ff1744;
+}
+
+.colorNormal .moreWork a:hover,
+.colorNormal .moreWork a:focus,
+.colorNormal .moreWork a:active {
+    background-color: #64ffda;
+    box-shadow: 0.4rem 0.4rem 0 #ff1744;
+}
+
+
+/*----------  Color Yecas  ----------*/
+
+.colorYecas .header h1 {
+    color: #263238;
+    background-color: #00e676;
+}
+
+.colorYecas .socialIcons a {
+    color: #263238;
+    border-color: #fff;
+    background-color: #fff;
+}
+
+.colorYecas .socialIcons a:hover,
+.colorYecas .socialIcons a:focus,
+.colorYecas .socialIcons a:active {
+    color: #263238;
+    border-color: #263238;
+    background-color: #00e676;
+    box-shadow: 0.4rem 0.4rem 0 #263238;
+}
+
+.colorYecas .header .navigation a {
+    border-color: #263238;
+    color: #263238;
+    background-color: #fff;
+    box-shadow: 0 0 0 #fff;
+}
+
+.colorYecas .header .navigation a:hover,
+.colorYecas .header .navigation a:focus,
+.colorYecas .header .navigation a:active {
+    color: #263238;
+    border-color: #263238;
+    background-color: #00e676;
+    box-shadow: 0.4rem 0.4rem 0 #263238;
+}
+
+.colorYecas .header .navigation a.active {
+    color: #fff;
+    border-color: #263238;
+    background-color: #263238;
+}
+
+.colorYecas .contentBlock {
+    border-color: #263238;
+    box-shadow: 0.4rem 0.4rem 0 #263238;
+}
+
+.colorYecas .contentBlock a {
+    color: #263238;
+}
+
+.colorYecas .contentBlock a:hover,
+.colorYecas .contentBlock a:focus,
+.colorYecas .contentBlock a:active {
+    text-shadow: 0.4rem 0.4rem 0 #00e676;
+}
+
+.colorYecas .imgBordered {
+    border-color: #263238;
+    background-color: #00e676;
+    box-shadow: 0.4rem 0.4rem 0 #263238;
+}
+
+.colorYecas .contentBlock h1 {
+    color: #263238;
+    text-shadow: 0.4rem 0.4rem 0 #00e676;
+}
+
+.colorYecas .contentBlock h2,
+.colorYecas .contentBlock h3,
+.colorYecas .contentBlock h4 {
+    color: #424242;
+}
+
+.colorYecas a.visitLink {
+    color: #263238;
+    border-color: #263238;
+    background-color: #fff;
+    box-shadow: 0.4rem 0.4rem 0 #263238;
+}
+
+.colorYecas a.visitLink:hover,
+.colorYecas a.visitLink:focus,
+.colorYecas a.visitLink:active {
+    background-color: #00e676;
+    box-shadow: 0.4rem 0.4rem 0 #263238;
+}
+
+.colorYecas .moreWork a {
+    color: #263238;
+    border-color: #263238;
+    background-color: #fff;
+    box-shadow: 0.4rem 0.4rem 0 #263238;
+}
+
+.colorYecas .moreWork a:hover,
+.colorYecas .moreWork a:focus,
+.colorYecas .moreWork a:active {
+    background-color: #00e676;
+    box-shadow: 0.4rem 0.4rem 0 #263238;
+}
+
+.colorYecas .flexslider {
+    border-color: #263238;
+}
+
+.colorYecas .flex-control-paging li a {
+    background-color: #fff;
+    border-color: #263238;
+    box-shadow: 0.2rem 0.2rem 0 #263238;
+}
+
+.colorYecas .flex-control-paging li a.flex-active {
+    background: #00e676;
+}
+
+
+/*----------  Color Seguru  ----------*/
+
+.colorSeguru .header h1 {
+    color: #284856;
+    background-color: #00ff83;
+}
+
+.colorSeguru .socialIcons a {
+    color: #284856;
+    border-color: #fff;
+    background-color: #fff;
+}
+
+.colorSeguru .socialIcons a:hover,
+.colorSeguru .socialIcons a:focus,
+.colorSeguru .socialIcons a:active {
+    color: #284856;
+    border-color: #284856;
+    background-color: #00ff83;
+    box-shadow: 0.4rem 0.4rem 0 #284856;
+}
+
+.colorSeguru .header .navigation a {
+    border-color: #284856;
+    color: #284856;
+    background-color: #fff;
+    box-shadow: 0 0 0 #fff;
+}
+
+.colorSeguru .header .navigation a:hover,
+.colorSeguru .header .navigation a:focus,
+.colorSeguru .header .navigation a:active {
+    color: #284856;
+    border-color: #284856;
+    background-color: #00ff83;
+    box-shadow: 0.4rem 0.4rem 0 #284856;
+}
+
+.colorSeguru .header .navigation a.active {
+    color: #fff;
+    border-color: #284856;
+    background-color: #284856;
+}
+
+.colorSeguru .contentBlock {
+    border-color: #284856;
+    box-shadow: 0.4rem 0.4rem 0 #284856;
+}
+
+.colorSeguru .contentBlock a {
+    color: #284856;
+}
+
+.colorSeguru .contentBlock a:hover,
+.colorSeguru .contentBlock a:focus,
+.colorSeguru .contentBlock a:active {
+    text-shadow: 0.4rem 0.4rem 0 #00ff83;
+}
+
+.colorSeguru .imgBordered {
+    border-color: #284856;
+    background-color: #00ff83;
+    box-shadow: 0.4rem 0.4rem 0 #284856;
+}
+
+.colorSeguru .contentBlock h1 {
+    color: #284856;
+    text-shadow: 0.4rem 0.4rem 0 #00ff83;
+}
+
+.colorSeguru .contentBlock h2,
+.colorSeguru .contentBlock h3,
+.colorSeguru .contentBlock h4 {
+    color: #424242;
+}
+
+.colorSeguru a.visitLink {
+    color: #284856;
+    border-color: #284856;
+    background-color: #fff;
+    box-shadow: 0.4rem 0.4rem 0 #284856;
+}
+
+.colorSeguru a.visitLink:hover,
+.colorSeguru a.visitLink:focus,
+.colorSeguru a.visitLink:active {
+    background-color: #00ff83;
+    box-shadow: 0.4rem 0.4rem 0 #284856;
+}
+
+.colorSeguru .moreWork a {
+    color: #284856;
+    border-color: #284856;
+    background-color: #fff;
+    box-shadow: 0.4rem 0.4rem 0 #284856;
+}
+
+.colorSeguru .moreWork a:hover,
+.colorSeguru .moreWork a:focus,
+.colorSeguru .moreWork a:active {
+    background-color: #00ff83;
+    box-shadow: 0.4rem 0.4rem 0 #284856;
+}
+
+.colorSeguru .flexslider {
+    border-color: #284856;
+}
+
+.colorSeguru .flex-control-paging li a {
+    background-color: #fff;
+    border-color: #284856;
+    box-shadow: 0.2rem 0.2rem 0 #284856;
+}
+
+.colorSeguru .flex-control-paging li a.flex-active {
+    background: #00ff83;
+}
+
+
+/*----------  Color Reddit  ----------*/
+
+.colorReddit .header h1 {
+    color: #f50057;
+    background-color: #81d4fa;
+}
+
+.colorReddit .socialIcons a {
+    color: #f50057;
+    border-color: #fff;
+    background-color: #fff;
+}
+
+.colorReddit .socialIcons a:hover,
+.colorReddit .socialIcons a:focus,
+.colorReddit .socialIcons a:active {
+    color: #f50057;
+    border-color: #f50057;
+    background-color: #81d4fa;
+    box-shadow: 0.4rem 0.4rem 0 #f50057;
+}
+
+.colorReddit .header .navigation a {
+    border-color: #f50057;
+    color: #f50057;
+    background-color: #fff;
+    box-shadow: 0 0 0 #fff;
+}
+
+.colorReddit .header .navigation a:hover,
+.colorReddit .header .navigation a:focus,
+.colorReddit .header .navigation a:active {
+    color: #f50057;
+    border-color: #f50057;
+    background-color: #81d4fa;
+    box-shadow: 0.4rem 0.4rem 0 #f50057;
+}
+
+.colorReddit .header .navigation a.active {
+    color: #fff;
+    border-color: #f50057;
+    background-color: #f50057;
+}
+
+.colorReddit .contentBlock {
+    border-color: #f50057;
+    box-shadow: 0.4rem 0.4rem 0 #f50057;
+}
+
+.colorReddit .contentBlock a {
+    color: #f50057;
+}
+
+.colorReddit .contentBlock a:hover,
+.colorReddit .contentBlock a:focus,
+.colorReddit .contentBlock a:active {
+    text-shadow: 0.4rem 0.4rem 0 #81d4fa;
+}
+
+.colorReddit .imgBordered {
+    border-color: #f50057;
+    background-color: #81d4fa;
+    box-shadow: 0.4rem 0.4rem 0 #f50057;
+}
+
+.colorReddit .contentBlock h1 {
+    color: #f50057;
+    text-shadow: 0.4rem 0.4rem 0 #81d4fa;
+}
+
+.colorReddit .contentBlock h2,
+.colorReddit .contentBlock h3,
+.colorReddit .contentBlock h4 {
+    color: #424242;
+}
+
+.colorReddit a.visitLink {
+    color: #f50057;
+    border-color: #f50057;
+    background-color: #fff;
+    box-shadow: 0.4rem 0.4rem 0 #f50057;
+}
+
+.colorReddit a.visitLink:hover,
+.colorReddit a.visitLink:focus,
+.colorReddit a.visitLink:active {
+    background-color: #81d4fa;
+    box-shadow: 0.4rem 0.4rem 0 #f50057;
+}
+
+.colorReddit .moreWork a {
+    color: #f50057;
+    border-color: #f50057;
+    background-color: #fff;
+    box-shadow: 0.4rem 0.4rem 0 #f50057;
+}
+
+.colorReddit .moreWork a:hover,
+.colorReddit .moreWork a:focus,
+.colorReddit .moreWork a:active {
+    background-color: #81d4fa;
+    box-shadow: 0.4rem 0.4rem 0 #f50057;
+}
+
+
+.colorReddit .flexslider {
+    border-color: #f50057;
+}
+
+.colorReddit .flex-control-paging li a {
+    background-color: #fff;
+    border-color: #f50057;
+    box-shadow: 0.2rem 0.2rem 0 #f50057;
+}
+
+.colorReddit .flex-control-paging li a.flex-active {
+    background: #81d4fa;
+}
+
+
+/*----------  Header  ----------*/
+
+.header {
+    width: 100%;
+    margin-bottom: 4rem;
+    display: inline-block;
+}
+
+.header .logo {
+   
+    text-align: center;
+}
+
+.header .logo a:hover,
+.header .logo a:focus,
+.header .logo a:active {
+    top: 0;
+    left: 0;
+}
+
+.header h1 {
+    font-weight: 900;
+    font-size: 2.4rem;
+    display: inline-block;
+    padding: 2.2rem 1rem;
+    margin-bottom: 0;
+    line-height: 1;
+    letter-spacing: 0.6px;
+}
+
+.header h2 {
+    color: #121212;
+    font-size: 2rem;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0;
+    line-height: 1;
+    font-family: 'museo_sans100';
+}
+
+.header h2.top {
+    bottom: -1.1rem;
+    letter-spacing: 0.23rem;
+}
+
+.header h2.bottom {
+    top: -1rem;
+    letter-spacing: 0.2rem;
+}
+
+.header .navigation {
+    float: right;
+    font-family: 'museo_sans900';
+    font-size: 1.4rem;
+    top: 4rem;
+    display: inline-block;
+}
+
+.header .navigation ul {
+    list-style: none;
+    text-align: right;
+}
+
+.header .navigation li {
+    display: inline-block;
+}
+
+.header .navigation a {
+    padding: 1rem 2rem;
+    margin: 0 0.5rem;
+    border: 1px solid;
+}
+
+@media screen and (max-width: 800px) {
+    .max-width {
+        padding: 1rem;
+        width:100%;
+    }
+    .header {
+        margin-bottom: 4rem;
+    }
+    .header .logo,
+    .header .navigation {
+        width: 100%;
+        text-align: center;
+    }
+    .header .navigation {
+        top: 1rem;
+    }
+    .header .navigation ul {
+        text-align: center;
+    }
+    .header .navigation li {
+        width: 50%;
+        float: left;
+        margin-bottom: 0;
+    }
+    .header .navigation a {
+        width: 100%;
+        display: block;
+        margin: 0;
+    }
+    .header .navigation li:first-child {
+        padding-right: 0.5rem;
+    }
+    .header .navigation li:last-child {
+        padding-left: 0.5rem;
+    }
+    .contentBlock {
+        padding: 2rem;
+    }
+    .socialIcons {
+        padding: 1rem 0;
+    }
+    .contentBlock .imgBordered {
+        right: 0rem;
+    }
+    .contentBlockLeft {
+        width: 100%;
+    }
+    .contentBlockRight {
+        width: 100%;
+        padding-left: 0rem;
+    }
+    .contentBlock h1 {
+        font-size: 4rem;
+        left: 0rem;
+    }
+    .contentBlock ul {
+        width: 100%;
+    }
+    a.visitLink {
+        left: 0rem;
+        padding: 1.5rem;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    .moreWork a {
+        padding: 1.5rem;
+        width: 100%;
+    }
+    .moreWork a.prevWork {
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .moreWork a.nextWork {
+        margin-left: 0;
+        text-align: center;
+    }
+    .contentBlockTwoColumns {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-gap: 0;
+        -moz-column-gap: 0;
+        column-gap: 0;
+    }
+    .flexslider {
+        margin: -2.1rem -2.1rem 5rem -2.1rem;
+        border: 1px solid;
+    }
+}
