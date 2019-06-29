@@ -73,7 +73,7 @@ a:visited {
 .container {
     font-size: 4rem;
     line-height: 6.4rem;
-    padding: 4rem;
+    padding: 0 4rem;
     max-width: 110rem;
     height: auto;
 
