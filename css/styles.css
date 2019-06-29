@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:600,900&display=swap');
 
 *,
 *:before,
@@ -12,7 +12,6 @@
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    position: relative;
 }
 
 ol,
@@ -25,112 +24,143 @@ img {
 }
 
 ::selection {
-    background: #4B4F56;
-    color: #fff;
+    background: #D6E1E5;
+    color: #121212;
 }
 
 ::-moz-selection {
-    background: #4B4F56;
-    color: #fff;
+    background: #D6E1E5;
+    color: #121212;
 }
 
 body,
 html {
     font-family: 'Nunito Sans', -apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
-    font-weight: 400;
-    background-color: #fff;
-    color: #4B4F56;
+    font-weight: 600;
+    background-color: #121212;
+    color: #D6E1E5;
     font-size: 10px;
-    overflow-x: hidden;
+
+}
+
+strong {
+    font-weight: 900;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    font-weight: 900;
+    background: transparent;
+    transition: all .25s ease-in;
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    padding: 0 0.5rem;
+    border-radius: 1px;
 }
 
 a:visited {
     color: inherit;
 }
 
+.flexcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
 .container {
-    max-width: 70rem;
-    margin: 0 auto;
-    padding: 5rem 2rem;
-}
-
-h1 {
-    font-size: 6rem;
-    font-weight: 800;
-    margin-bottom: 2rem;
-    letter-spacing: -1px;
-}
-
-h2 {
     font-size: 4rem;
-    letter-spacing: -1px;
-    margin-bottom: 1rem;
+    line-height: 6.4rem;
+    padding: 4rem;
+    max-width: 110rem;
+    height: auto;
+
 }
 
-h3 {
-    font-size: 3rem;
-}
-
-.socialLinks {
-    padding: 5rem 0 0 0;
-    font-size: 2rem;
-}
-
-.socialLinks li {
-    margin-bottom: 1rem;
-}
-
-.socialLinks li a {
-    margin-bottom: 1rem;
-    transition: all 0.2s ease-in-out;
-    position: relative;
-    padding: 1rem 0;
-}
-
-.socialLinks li a:hover {
-    padding-left: 1rem;
-}
 
 a.email {
-    color: #ff1744;
+    color: #26E9C3;
+    background-image: linear-gradient(to left,
+            transparent,
+            transparent 50%,
+            #26E9C3 50%,
+            #26E9C3);
 }
 
 a.linkedin {
-    color: #0168a1;
+    color: #027FC4;
+    background-image: linear-gradient(to left,
+            transparent,
+            transparent 50%,
+            #027FC4 50%,
+            #027FC4);
 }
 
 a.dribbble {
-    color: #d4457c;
+    color: #EF4D8B;
+    background-image: linear-gradient(to left,
+            transparent,
+            transparent 50%,
+            #EF4D8B 50%,
+            #EF4D8B);
 }
 
 a.twitter {
-    color: #1b92db;
+    color: #0096E8;
+    background-image: linear-gradient(to left,
+            transparent,
+            transparent 50%,
+            #0096E8 50%,
+            #0096E8);
 }
 
-a.instagram {
-    color: #9a2577;
+a.avion {
+    color: #27BEC4;
+    background-image: linear-gradient(to left,
+            transparent,
+            transparent 50%,
+            #27BEC4 50%,
+            #27BEC4);
+}
+
+a.scvsoft {
+    color: #12B896;
+    background-image: linear-gradient(to left,
+            transparent,
+            transparent 50%,
+            #12B896 50%,
+            #12B896);
+}
+
+a.yecas {
+    color: #9145FA;
+    background-image: linear-gradient(to left,
+            transparent,
+            transparent 50%,
+            #9145FA 50%,
+            #9145FA);
+}
+
+a.anarchygames {
+    color: #FFC107;
+    background-image: linear-gradient(to left,
+            transparent,
+            transparent 50%,
+            #FFC107 50%,
+            #FFC107);
+}
+
+a:hover {
+    background-position: 0 0;
+    color: #121212;
 }
 
 @media screen and (max-width: 800px) {
-
-    h1 {
-        font-size: 4rem;
-    }
-
-    h2 {
-        font-size: 2.8rem;
-    }
-
-    h3 {
+    .container {
         font-size: 2.4rem;
+        line-height: 3.6rem;
     }
 
-    .socialLinks {
-        font-size: 2rem;
-    }
 }
