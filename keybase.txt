@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/aguscruiz
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://agustinruiz.com
+  * I am aguscruiz (https://keybase.io/aguscruiz) on keybase.
+  * I have a public key ASCmdNTeicfeNDVAwxoxsVfeO2eeALhCg7qhOQOmwJjfRwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01200b9dd26b87500d7c4300ad46f38eed459772a064eca4d9b43c9441ba526c3d740a",
+      "host": "keybase.io",
+      "kid": "0120a674d4de89c7de343540c31a31b157de3b679e00b84283baa13903a6c098df470a",
+      "uid": "f2c196c5f2631c62eb14a4c2dc4bc219",
+      "username": "aguscruiz"
+    },
+    "merkle_root": {
+      "ctime": 1563419031,
+      "hash": "20e9d2074a1fe14386dc5ba4660b521cfa5999b70c421516cd86b5283559d8f1d7781ad37d832a63ec4c4908595f59fbb315f27d77afc709b701fc2294ea13f1",
+      "hash_meta": "d4332d89c73d62b2ed004b0ae23b5096e1bcd93a0d173f1f12e7cb71663f7171",
+      "seqno": 5787486
+    },
+    "service": {
+      "entropy": "UQRpLKNQ6yi+0Ek1wMXM/mku",
+      "hostname": "agustinruiz.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.2.0"
+  },
+  "ctime": 1563419039,
+  "expire_in": 504576000,
+  "prev": "0d722f09b14f197461f452a3ea8528b43b346a6d371beb2077af96b5a849433e",
+  "seqno": 57,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgpnTU3onH3jQ1QMMaMbFX3jtnngC4QoO6oTkDpsCY30cKp3BheWxvYWTESpcCOcQgDXIvCbFPGXRh9FKj6oUotDs0am03G+sgd6+WtahJQz7EIMDiaJeCM0L8AX4XbU0bQYYCP3veJkhfGvQy1uOJPi5gAgHCo3NpZ8RAgVAP3bVwPivFfdxoryfw75jT4A/axrTl3OVc0eNMAcmMFw+r58JmJdj2h3mUgU8AtVluxQOWWt7B/Eqp2xF8DqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJvxzd/iw/l/aYGMK88RBZKWm8IN98BlASOP8XMY0Z2co3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/aguscruiz
+
+==================================================================
