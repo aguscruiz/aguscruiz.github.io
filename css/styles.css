@@ -54,7 +54,7 @@ a {
     background: transparent;
     transition: all .25s ease-in;
     background-position: 100% 0;
-    background-size: 200% 100%;
+    background-size: 201% 100%;
     padding: 0 0.5rem;
     border-radius: 1px;
 }
