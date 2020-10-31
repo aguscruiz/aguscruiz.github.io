@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:600,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 *,
 *:before,
@@ -35,27 +35,28 @@ img {
 
 body,
 html {
-    font-family: 'Nunito Sans', -apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
-    font-weight: 600;
-    background-color: #121923;
-    color: #D6E1E5;
+    font-family: -apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+    font-weight: 300;
+    background: rgb(241,253,255);
+    background: linear-gradient(-180deg, rgba(241,253,255,1) 0%, rgba(208,236,241,1) 100%);
+    color: #161F2A;
     font-size: 10px;
 
 }
 
 strong {
-    font-weight: 900;
+    font-weight: bold;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-    font-weight: 900;
+    font-weight: bold;
     background: transparent;
     transition: all .25s ease-in;
     background-position: 100% 0;
     background-size: 201.5% 100%;
-    padding: 0 0.5rem;
+    padding: 0rem;
     border-radius: 1px;
 }
 
@@ -69,10 +70,16 @@ a:visited {
     justify-content: center;
     min-height: 100vh;
 }
-
+.header{
+    font-family: 'DM Serif Display', serif;
+    font-size: 4.8rem;
+    line-height:5.6rem;
+    margin-bottom:3.2rem;
+    color:#175550;
+}
 .container {
-    font-size: 4rem;
-    line-height: 6.4rem;
+    font-size: 3.2rem;
+    line-height: 5.6rem;
     padding: 0 2.4rem;
     max-width: 110rem;
     height: auto;
@@ -84,12 +91,12 @@ a:visited {
 }
 
 a.email {
-    color: #26E9C3;
+    color: #833C00;
     background-image: linear-gradient(to left,
             transparent,
             transparent 50%,
-            #26E9C3 50%,
-            #26E9C3);
+            #833C00 50%,
+            #833C00);
 }
 
 a.linkedin {
@@ -157,12 +164,16 @@ a.anarchygames {
 
 a:hover {
     background-position: 0 0;
-    color: #121212;
+    color: #fff;
 }
 
 @media screen and (max-width: 800px) {
     .container {
-        font-size: 2.4rem;
-        line-height: 3.6rem;
+        font-size: 1.6rem;
+        line-height: 3.2rem;
+    }
+    .header{
+        font-size: 4.8rem;
+        line-height:4.8rem;
     }
 }
