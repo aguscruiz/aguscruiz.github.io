@@ -1,4 +1,4 @@
-@import url("https://use.typekit.net/aaf8cth.css");
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@700&family=Inter:wght@400;700&display=swap');
 
 *,
 *:before,
@@ -24,21 +24,21 @@ img {
 }
 
 ::selection {
-    background: #152350;
-    color: #00FF00;
+    background: #21FF94;
+    color: #201142;
 }
 
 ::-moz-selection {
-    background: #152350;
-    color: #00FF00;
+    background: #21FF94;
+    color: #201142;
 }
 
 body,
 html {
-    font-family: 'acumin-pro', -apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
-    font-weight: 300;
-    background: #fff;
-    color: #152350;
+    font-family: 'Inter', -apple-system, '.SFNSText-Regular', 'San Francisco', 'Roboto', 'Segoe UI', 'Helvetica Neue', 'Lucida Grande', sans-serif;
+    font-weight: 400;
+    background: #201142;
+    color: #fff;
     font-size: 10px;
 
 }
@@ -71,14 +71,15 @@ a:visited {
 }
 .brand{
     margin-bottom:4rem;
+    max-width:40rem;
 }
 .header {
-    font-family: 'degular', serif;
+    font-family: 'Epilogue', serif;
     font-weight: 700;
     font-size: 4.8rem;
     line-height: 5.6rem;
     margin-bottom: 3.2rem;
-    color: #152350;
+    color: #FF5FBF;
 }
 
 .container {
@@ -95,12 +96,12 @@ a:visited {
 }
 
 a.email {
-    color: #8448D9;
+    color: #21FF94;
     background-image: linear-gradient(to left,
             transparent,
             transparent 50%,
-            #8448D9 50%,
-            #8448D9);
+            #21FF94 50%,
+            #21FF94);
 }
 
 a.linkedin {
@@ -140,12 +141,12 @@ a.avion {
 }
 
 a.scvsoft {
-    color: #12B896;
+    color: #01A67D;
     background-image: linear-gradient(to left,
             transparent,
             transparent 50%,
-            #12B896 50%,
-            #12B896);
+            #01A67D 50%,
+            #01A67D);
 }
 
 a.yecas {
@@ -173,12 +174,9 @@ a:hover {
 
 @media screen and (max-width: 800px) {
 
-    body,
-    html {
-        font-weight: 400;
-    }
     .brand{
         margin-bottom:2.4rem;
+        max-width:90%
     }
     .container {
         font-size: 2rem;
